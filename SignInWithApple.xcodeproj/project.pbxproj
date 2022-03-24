@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632FF96127EC21D700517C83 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FF96027EC21D700517C83 /* KeychainItem.swift */; };
 		F1F0947A27EA1F5800E1FB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0947927EA1F5800E1FB55 /* AppDelegate.swift */; };
 		F1F0947C27EA1F5800E1FB55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0947B27EA1F5800E1FB55 /* SceneDelegate.swift */; };
 		F1F0947E27EA1F5800E1FB55 /* StartSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0947D27EA1F5800E1FB55 /* StartSignInVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632FF96027EC21D700517C83 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 		F1F0947627EA1F5800E1FB55 /* SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F0947927EA1F5800E1FB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F0947B27EA1F5800E1FB55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				F1F0947B27EA1F5800E1FB55 /* SceneDelegate.swift */,
 				F1F0947D27EA1F5800E1FB55 /* StartSignInVC.swift */,
 				F1F0948D27EA1FAD00E1FB55 /* CheckSignInVC.swift */,
+				632FF96027EC21D700517C83 /* KeychainItem.swift */,
 				F1F0947F27EA1F5800E1FB55 /* Main.storyboard */,
 				F1F0948227EA1F5900E1FB55 /* Assets.xcassets */,
 				F1F0948427EA1F5900E1FB55 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				F1F0947E27EA1F5800E1FB55 /* StartSignInVC.swift in Sources */,
 				F1F0947A27EA1F5800E1FB55 /* AppDelegate.swift in Sources */,
+				632FF96127EC21D700517C83 /* KeychainItem.swift in Sources */,
 				F1F0948E27EA1FAD00E1FB55 /* CheckSignInVC.swift in Sources */,
 				F1F0947C27EA1F5800E1FB55 /* SceneDelegate.swift in Sources */,
 			);

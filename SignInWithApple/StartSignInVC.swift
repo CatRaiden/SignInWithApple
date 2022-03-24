@@ -32,6 +32,14 @@ class StartSignInVC: UIViewController {
         controller.performRequests()
     }
     
+    private func saveUserInKeychain(_ userIdentifier: String) {
+        do {
+            try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
+        } catch {
+            print("Unable to save userIdentifier to keychain.")
+        }
+    }
+    
 }
 
 extension StartSignInVC: ASAuthorizationControllerDelegate {
@@ -43,7 +51,13 @@ extension StartSignInVC: ASAuthorizationControllerDelegate {
             print("fullName: \(String(describing: appleIDCredential.fullName))")
             print("Email: \(String(describing: appleIDCredential.email))")
             print("realUserStatus: \(String(describing: appleIDCredential.realUserStatus))")
+            self.saveUserInKeychain(appleIDCredential.user)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CheckSignInVC") as! CheckSignInVC
+            vc.credential = appleIDCredential
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
+        
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
